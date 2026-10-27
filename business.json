@@ -1,0 +1,15 @@
+{
+  "_help": "Fill in the details below, then run: npm run build. Anything left empty is simply hidden on the website. Do not invent details - only add what is true and verified.",
+  "email": "",
+  "address": "",
+  "hours": "",
+  "social": {
+    "instagram": "",
+    "facebook": "",
+    "youtube": ""
+  },
+  "credentials": [],
+  "credentials_example": [
+    { "label": "Authorised money changer licence no.", "value": "ADD ONLY IF YOU HOLD ONE" }
+  ]
+}

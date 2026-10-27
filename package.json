@@ -1,0 +1,27 @@
+{
+  "name": "primeyatra",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website for Prime Enterprises (primeyatra.co.in): tours, forex, money transfer and visa assistance.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.6"
+  },
+  "scripts": {
+    "build": "tsx src/build.ts",
+    "preview": "tsx tests/server.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/unit.test.ts",
+    "e2e": "tsx tests/e2e.ts",
+    "check": "npm run typecheck && npm run test && npm run build && npm run e2e"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "esbuild": "^0.25.0",
+    "playwright": "^1.50.0",
+    "sharp": "^0.34.0",
+    "tailwindcss": "^4.1.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

@@ -311,7 +311,8 @@ const scenes: Record<string, (r: R) => string> = {
     sky([[0, '#c9e1e6'], [1, '#f8efe0']], 340) +
     sun(600, 150, 26, '#fff4d2', 'rgba(255,245,215,.6)') +
     [[0.55, 270, '#b6cbc8'], [0.75, 300, '#8fb0aa'], [1, 335, '#5d8a82']]
-      .map(([o, y, c], k) => {
+      .map(([o, yv, c], k) => {
+        const y = yv as number;
         let s = '';
         const n = 4 + k;
         for (let i = 0; i < n; i++) {
